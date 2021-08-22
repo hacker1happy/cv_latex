@@ -1,0 +1,230 @@
+%%%%%%%%%%%%%%%%%
+% This is an example CV created using altacv.cls (v1.6, 21 May 2021) written by
+% LianTze Lim (liantze@gmail.com), based on the
+% Cv created by BusinessInsider at http://www.businessinsider.my/a-sample-resume-for-marissa-mayer-2016-7/?r=US&IR=T
+%
+%% It may be distributed and/or modified under the
+%% conditions of the LaTeX Project Public License, either version 1.3
+%% of this license or (at your option) any later version.
+%% The latest version of this license is in
+%%    http://www.latex-project.org/lppl.txt
+%% and version 1.3 or later is part of all distributions of LaTeX
+%% version 2003/12/01 or later.
+%%%%%%%%%%%%%%%%
+
+%% Use the "normalphoto" option if you want a normal photo instead of cropped to a circle
+% \documentclass[10pt,a4paper,normalphoto]{altacv}
+
+\documentclass[10pt,a4paper,ragged2e,withhyper]{altacv}
+
+%% AltaCV uses the fontawesome5 package.
+%% See http://texdoc.net/pkg/fontawesome5 for full list of symbols.
+
+% Change the page layout if you need to
+\geometry{left=1.25cm,right=1.25cm,top=1.5cm,bottom=1.5cm,columnsep=1.2cm}
+
+% The paracol package lets you typeset columns of text in parallel
+\usepackage{paracol}
+
+
+% Change the font if you want to, depending on whether
+% you're using pdflatex or xelatex/lualatex
+\ifxetexorluatex
+  % If using xelatex or lualatex:
+  \setmainfont{Lato}
+\else
+  % If using pdflatex:
+  \usepackage[default]{lato}
+\fi
+
+% Change the colours if you want to
+\definecolor{VividPurple}{HTML}{3E0097}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+% \colorlet{name}{black}
+% \colorlet{tagline}{PastelRed}
+\colorlet{heading}{VividPurple}
+\colorlet{headingrule}{VividPurple}
+% \colorlet{subheading}{PastelRed}
+\colorlet{accent}{VividPurple}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+% Change some fonts, if necessary
+% \renewcommand{\namefont}{\Huge\rmfamily\bfseries}
+% \renewcommand{\personalinfofont}{\footnotesize}
+% \renewcommand{\cvsectionfont}{\LARGE\rmfamily\bfseries}
+% \renewcommand{\cvsubsectionfont}{\large\bfseries}
+
+% Change the bullets for itemize and rating marker
+% for \cvskill if you want to
+\renewcommand{\itemmarker}{{\small\textbullet}}
+\renewcommand{\ratingmarker}{\faCircle}
+
+%% Use (and optionally edit if necessary) this .tex if you
+%% want to use an author-year reference style like APA(6)
+%% for your publication list
+\input{pubs-authoryear}
+
+%% Use (and optionally edit if necessary) this .tex if you
+%% want an originally numerical reference style like IEEE
+%% for your publication list
+% \input{pubs-num}
+
+%% sample.bib contains your publications
+\addbibresource{sample.bib}
+
+\begin{document}
+\name{Priyanshu Gupta}
+\personalinfo{
+    \vspace{\baselineskip}
+
+  \email{9547priyanshu.gupta@gmail.com}
+  \href{tel:919593979417}{+91 959 397 9417}
+  \vspace{\baselineskip}
+
+  \location{Dehradun, India}
+  \twitter{@Priyans34429425}
+  \linkedin{priyanshu-gupta-a22664170}
+  \github{hacker1happy}
+    \vspace{\baselineskip}
+
+  \href{https://leetcode.com/lazzy_coder}{\includegraphics[height=0.6cm]{leetcode}}
+  \hspace{5mm}
+    \href{https://www.codechef.com/users/happy__boy}{\includegraphics[height=0.6cm]{codechef}}
+     \hspace{5mm}
+      \href{https://auth.geeksforgeeks.org/user/lazzycoder}{\includegraphics[height=0.6cm]{gfg-logo}}
+       \hspace{5mm}
+      \href{https://www.hackerrank.com/9547priyanshu_g1}{\includegraphics[height=0.6cm]{HackerRank_logo}}
+}
+
+\makecvheader
+
+%% Depending on your tastes, you may want to make fonts of itemize environments slightly smaller
+\AtBeginEnvironment{itemize}{\small}
+
+%% Set the left/right column width ratio to 6:4.
+\columnratio{0.6}
+
+% Start a 2-column paracol. Both the left and right columns will automatically
+% break across pages if things get too long.
+\begin{paracol}{2}
+
+\cvsection{Education}
+
+\cvevent{B-tech (C.S.E)}{Graphic Era Hill University}{June 2019 -- Ongoing}{Dehradun (Uttarakhand), India}
+
+\divider
+
+\cvevent{Higher Secondary}{D.A.V Public School}{May 2017 -- May 2019}{Raniganj (West Bengal), India}
+\begin{itemize}
+\item Science (Biology)
+\item 89 \% (CBSE)
+\end{itemize}
+
+\divider
+
+\cvevent{Senior Secondary}{D.A.V Public School}{May 2007 -- April 2017}{Raniganj (West Bengal), India}
+
+\begin{itemize}
+\item 9.8 cgpa (CBSE)
+\end{itemize}
+
+    \vspace{\baselineskip}
+
+% \begin{paracol}{2}
+
+\cvsection{Personal Projects}
+
+\cvevent{Face recognition attendance system}{}{Sept 2021 -- Dec 2021}{}
+\begin{itemize}
+\item Face recognition library being a high level deep learning library helps in identifying faces accurately. We’ve then used this to build a face attendance system which can be helpful in offices, schools or any other place reducing manual labour and automatically updating the attendance records in day-to-day life.
+\end{itemize}
+
+\divider
+\cvevent{Railway tracking & arrival prediction}{}{Dec 2021 -- Mar 2022}{}
+\begin{itemize}
+\item This system works like – when train is departed late from a station, admin will enter details about departure and its time, and this information goes in real time on internet server and retrieved on other system through internet server and shows the details on screen.
+\end{itemize}
+
+    \vspace{\baselineskip}
+\cvsection{Interests}
+\cvtag{Guitar}
+\cvtag{Singing}
+\cvtag{Kabaddi}
+\cvtag{Cricket}
+\cvtag{Volley-ball}
+\cvtag{Cycling}
+\cvtag{Traveling}
+    
+    
+\switchcolumn
+
+\cvsection{About}
+\begin{quote}
+``I am flexible in my working hours, being able to work evenings and weekends.''
+\end{quote}
+
+    \vspace{\baselineskip}
+
+\cvsection{Certificates}
+
+\cvevent{Fundamental of Python \& Tkinter}{}{June 2020 -- Dec 2020}{}
+\begin{itemize}
+\item Codiens (DehraDun)
+\end{itemize}
+
+\cvevent{Programming, DSA using Python}{}{Feb 2021 -- May 2021}{}
+\begin{itemize}
+\item NPTEL
+\end{itemize}
+
+\cvevent{Google Could Computing Foundations}{}{Jan 2021 -- May 2021}{}
+\begin{itemize}
+\item Google
+\end{itemize}
+
+\cvevent{MERN Stack web development }{}{May 2021 -- Sept 2021}{}
+\begin{itemize}
+\item Udemy
+\end{itemize}
+
+\cvevent{Hands on machine learning}{}{Nov 2021 -- Feb 2022}{}
+\begin{itemize}
+\item Udemy
+\end{itemize}
+
+    \vspace{\baselineskip}
+
+\cvsection{Skills}
+\cvtag{C/C++}
+\cvtag{Java (6/10)}
+\cvtag{Python}
+\cvtag{HTML, CSS}
+\cvtag{JavaScript}
+
+\divider\smallskip
+
+\cvtag{Django}
+\cvtag{Tkinter}
+\cvtag{MySQL}
+\cvtag{Oracle}
+\cvtag{MongoDB}
+\cvtag{Machine Learning}
+
+    \vspace{\baselineskip}
+
+\cvsection{Languages}
+
+\cvskill{English}{5}
+% \divider
+
+\cvskill{Hindi}{5}
+% \divider
+
+\cvskill{Bengali}{2.5} %% supports X.5 values.
+
+
+\end{paracol}
+
+\end{document}
